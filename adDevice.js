@@ -1,22 +1,26 @@
-var adDevice = [
+var adDevices = [
   {
     id:"1000",
     title:"PC",
-    position:["0001","0002","0003","0004","0005","0006","0007","0008","0009","0010","0011","0012","0013","0014","0015","0016","0017","0018","0019","0020","0021","0022","0023","0024","0025","0112"]//TODO：安照最新adPattern修改
+    position: adPatternPC,
+    channels: adChannelsPC
   },
   {
     id:"2000",
     title:"iPhone",
-    position:["0003","0004","0005","0006","0007","0008","0101","0102","0107","0113","0114","0115","0116","0117","0118","0119","0120","0121","0122","0123"]//TODO：安照最新adPattern修改
+    position: adPatternPhone,
+    channels: adChannelsMobile
   },
   {
     id:"3000",
     title:"Android",
-    position:["0003","0004","0005","0006","0007","0008","0101","0102","0107","0113","0114","0115","0116","0117","0118","0119","0120","0121","0122","0123"]//TODO：安照最新adPattern修改
+    position: adPatternPhone,
+    channels: adChannelsMobile
   },
   {
     id:"4000",
     title:"iPad",
-    position:["0003","0004","0005","0006","0102","0104","0105","0106","0107","0117","0122"]//TODO：安照最新adPattern修改
+    position: adPatternPad,
+    channels: adChannelsMobile
   }
 ]

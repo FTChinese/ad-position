@@ -1,4 +1,4 @@
-var adChannel = [
+var adChannelsPC = [
   {
     id:"10",
     title:"首页",
