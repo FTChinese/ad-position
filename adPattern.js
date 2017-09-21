@@ -1,4 +1,4 @@
-var adPattern = [
+var adPatternPC = [
   {
     id:"01",
     title:"Banner",
