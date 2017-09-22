@@ -1,492 +1,816 @@
 var adChannelsPC = [
   {
-    id:"10",
-    title:"首页",
+    id:'10',
+    title:'首页',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       }
     ]
   },
   {
-    id:"11",
-    title:"中国",
+    id:'11',
+    title:'中国',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"政经"
+        id:'01',
+        title:'政经'
       },
       {
-        id:"02",
-        title:"社会与文化"
+        id:'02',
+        title:'社会与文化'
       },
       {
-        id:"03",
-        title:"商业"
+        id:'03',
+        title:'商业'
       },
       {
-        id:"04",
-        title:"金融市场"
+        id:'04',
+        title:'金融市场'
       },
       {
-        id:"05",
-        title:"股市"
+        id:'05',
+        title:'股市'
       },
       {
-        id:"06",
-        title:"房地产"
+        id:'06',
+        title:'房地产'
       }
     ]
   },
   {
-    id:"12",
-    title:"全球",
+    id:'12',
+    title:'全球',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"美国"
+        id:'01',
+        title:'美国'
       },
       {
-        id:"02",
-        title:"英国"
+        id:'02',
+        title:'英国'
       },
       {
-        id:"03",
-        title:"亚太"
+        id:'03',
+        title:'亚太'
       },
       {
-        id:"04",
-        title:"欧洲"
+        id:'04',
+        title:'欧洲'
       },
       {
-        id:"05",
-        title:"美洲"
+        id:'05',
+        title:'美洲'
       },
       {
-        id:"06",
-        title:"非洲"
+        id:'06',
+        title:'非洲'
       }
     ]
   },
   {
-    id:"13",
-    title:"经济",
+    id:'13',
+    title:'经济',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"全球经济"
+        id:'01',
+        title:'全球经济'
       },
       {
-        id:"02",
-        title:"中国经济"
+        id:'02',
+        title:'中国经济'
       },
       {
-        id:"03",
-        title:"贸易"
+        id:'03',
+        title:'贸易'
       },
       {
-        id:"04",
-        title:"环境"
+        id:'04',
+        title:'环境'
       },
       {
-        id:"05",
-        title:"经济展望"
+        id:'05',
+        title:'经济展望'
       }
     ]
   },
   {
-    id:"14",
-    title:"金融市场",
+    id:'14',
+    title:'金融市场',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"股市"
+        id:'01',
+        title:'股市'
       },
       {
-        id:"02",
-        title:"外汇"
+        id:'02',
+        title:'外汇'
       },
       {
-        id:"03",
-        title:"债市"
+        id:'03',
+        title:'债市'
       },
       {
-        id:"04",
-        title:"大宗商品"
+        id:'04',
+        title:'大宗商品'
       }
     ]
   },
   {
-    id:"15",
-    title:"商业",
+    id:'15',
+    title:'商业',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"金融"
+        id:'01',
+        title:'金融'
       },
       {
-        id:"02",
-        title:"科技"
+        id:'02',
+        title:'科技'
       },
       {
-        id:"03",
-        title:"汽车"
+        id:'03',
+        title:'汽车'
       },
       {
-        id:"04",
-        title:"房地产"
+        id:'04',
+        title:'房地产'
       },
       {
-        id:"05",
-        title:"农林"
+        id:'05',
+        title:'农林'
       },
       {
-        id:"06",
-        title:"能源"
+        id:'06',
+        title:'能源'
       },
       ,
       {
-        id:"07",
-        title:"工业和采矿"
+        id:'07',
+        title:'工业和采矿'
       },
       {
-        id:"08",
-        title:"航空和运输"
+        id:'08',
+        title:'航空和运输'
       },
       {
-        id:"09",
-        title:"医药"
+        id:'09',
+        title:'医药'
       },
       {
-        id:"10",
-        title:"娱乐"
+        id:'10',
+        title:'娱乐'
       },
       {
-        id:"11",
-        title:"零售和消费品"
+        id:'11',
+        title:'零售和消费品'
       },
       {
-        id:"12",
-        title:"传媒与文化"
+        id:'12',
+        title:'传媒与文化'
       }
     ]
   },
   {
-    id:"16",
-    title:"观点",
+    id:'16',
+    title:'观点',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       }
     ]
   },
   {
-    id:"17",
-    title:"管理",
+    id:'17',
+    title:'管理',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"FT商学院"
+        id:'01',
+        title:'FT商学院'
       },
       {
-        id:"02",
-        title:"职场"
+        id:'02',
+        title:'职场'
       },
       {
-        id:"03",
-        title:"领导力"
+        id:'03',
+        title:'领导力'
       },
       {
-        id:"04",
-        title:"财富管理"
+        id:'04',
+        title:'财富管理'
       },
       {
-        id:"05",
-        title:"商务互联"
+        id:'05',
+        title:'商务互联'
       }
     ]
   },
   {
-    id:"18",
-    title:"生活时尚",
+    id:'18',
+    title:'生活时尚',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"乐尚街"
+        id:'01',
+        title:'乐尚街'
       },
       {
-        id:"02",
-        title:"旅行"
+        id:'02',
+        title:'旅行'
       },
       {
-        id:"03",
-        title:"美酒与美食"
+        id:'03',
+        title:'美酒与美食'
       }
     ]
   },
   {
-    id:"19",
-    title:"视频",
+    id:'19',
+    title:'视频',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"有色眼镜"
+        id:'01',
+        title:'有色眼镜'
       }
     ]
   },
   {
-    id:"20",
-    title:"其他频道及内容",
+    id:'20',
+    title:'创新经济',
     sub:[
       {
-        id:"00",
-        title:"首页"
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  // MARK:以上10-20都为正规传统频道页；以下50开头的为其他频道及内容（包括特别报道专题等），对应之前大表的20开头频道；20-50为预留频道，预留给之后新增的正式频道
+  {
+    id:'50',
+    title:'其他频道及内容',
+    sub:[
+      {
+        id:'00',
+        title:'首页'
       },
       {
-        id:"01",
-        title:"朝九晚五"
+        id:'01',
+        title:'朝九晚五'
       },
       {
-        id:"02",
-        title:"年度报告"
+        id:'02',
+        title:'年度报告'
       },
       {
-        id:"03",
-        title:"博鉴"
+        id:'03',
+        title:'博鉴'
       },
       {
-        id:"04",
-        title:"艺术品投资"
+        id:'04',
+        title:'艺术品投资'
       },
       {
-        id:"05",
-        title:"G20_2"
+        id:'05',
+        title:'G20_2'
       },
       {
-        id:"06",
-        title:"影响世界的人物"
+        id:'06',
+        title:'影响世界的人物'
       },
       {
-        id:"07",
-        title:"商旅目的地"
+        id:'07',
+        title:'商旅目的地'
       },
       {
-        id:"08",
-        title:"达沃斯"
+        id:'08',
+        title:'达沃斯'
       },
       {
-        id:"09",
-        title:"图辑"
+        id:'09',
+        title:'图辑'
       },
       {
-        id:"10",
-        title:"车展"
+        id:'10',
+        title:'车展'
       },
       {
-        id:"11",
-        title:"巅峰女性"
+        id:'11',
+        title:'巅峰女性'
       },
       {
-        id:"12",
-        title:"城市未来"
+        id:'12',
+        title:'城市未来'
       },
       {
-        id:"13",
-        title:"与FT共进午餐"
+        id:'13',
+        title:'与FT共进午餐'
       },
       {
-        id:"14",
-        title:"能源未来"
+        id:'14',
+        title:'能源未来'
       },
       {
-        id:"15",
-        title:"商务体育"
+        id:'15',
+        title:'商务体育'
       },//17/18是首页测试_北京、内页测试——北京
       {
-        id:"16",
-        title:"焦点女性"
+        id:'16',
+        title:'焦点女性'
       },
       {
-        id:"19",
-        title:"市场"
+        id:'19',
+        title:'市场'
       },
       {
-        id:"20",
-        title:"会议"
+        id:'20',
+        title:'会议'
       },//21(iPad),22(iPhone),23(Android),24(其他手机)
       {
-        id:"25",
-        title:"今日焦点"
+        id:'25',
+        title:'今日焦点'
       },
       {
-        id:"26",
-        title:"午后更新"
+        id:'26',
+        title:'午后更新'
       },
       {
-        id:"27",
-        title:"一周精选"
+        id:'27',
+        title:'一周精选'
       },
       {
-        id:"28",
-        title:"两会"
+        id:'28',
+        title:'两会'
       },
       {
-        id:"29",
-        title:"腕表与珠宝"
+        id:'29',
+        title:'腕表与珠宝'
       },
       {
-        id:"30",
-        title:"G7峰会"
+        id:'30',
+        title:'G7峰会'
       },
       {
-        id:"31",
-        title:"新中坚力量"
+        id:'31',
+        title:'新中坚力量'
       },
       {
-        id:"32",
-        title:"我走过的世界"
-      },
-        {
-        id:"33",
-        title:"View From The Top"
+        id:'32',
+        title:'我走过的世界'
       },
       {
-        id:"34",
-        title:"Luxury Spending"
+        id:'33',
+        title:'View From The Top'
+      },
+      {
+        id:'34',
+        title:'Luxury Spending'
       },//35(首页测试_上海)、36（内页测试_上海）、37（首页测试_海外）、38（内页测试_海外）
       {
-        id:"39",
-        title:"简氏酒庄"
+        id:'39',
+        title:'简氏酒庄'
       },//40(View From The Top_iPad)/41(Android App)/(Android APP测试)
       {
-        id:"40",
-        title:"View From The Top_iPad"//这是和设备挂钩的么？？
+        id:'40',
+        title:'View From The Top_iPad'//这是和设备挂钩的么？？
       },
       {
-        id:"43",
-        title:"生活时尚_艺术与娱乐"
+        id:'43',
+        title:'生活时尚_艺术与娱乐'
       },
       {
-        id:"44",
-        title:"生活时尚_品味"
+        id:'44',
+        title:'生活时尚_品味'
       },
       {
-        id:"45",
-        title:"生活时尚_生活话题"
+        id:'45',
+        title:'生活时尚_生活话题'
       },
       {
-        id:"46",
-        title:"生活时尚_消费经"
+        id:'46',
+        title:'生活时尚_消费经'
       },
       {
-        id:"47",
-        title:"生活时尚_理财"
+        id:'47',
+        title:'生活时尚_理财'
       },
       {
-        id:"48",
-        title:"奢华水上"
+        id:'48',
+        title:'奢华水上'
       },
       {
-        id:"49",
-        title:"礼待天下"
+        id:'49',
+        title:'礼待天下'
       },
       {
-        id:"50",
-        title:"FT 研究院"
+        id:'50',
+        title:'FT 研究院'
       },
       {
-        id:"51",
-        title:"全球商业的未来"
-      },//52(移动端测试页)
-      {
-        id:"52",
-        title:"极致人生"
+        id:'51',
+        title:'全球商业的未来'
       },
       {
-        id:"54",
-        title:"会员信息中心"
+        id:'52',
+        title:'极致人生'
+      },//53:移动端测试
+      {
+        id:'54',
+        title:'会员信息中心'
+      },
+      {
+        id:'55',
+        title:'投资英国'
+      },
+      {
+        id:'56',
+        title:'智能城市'
+      },
+      {
+        id:'57',
+        title:'存储世界'
+      },
+      {
+        id:'58',
+        title:'调研页频道'
+      },//59(iPhone测试页)、60（Android测试页）
+      {
+        id:'61',
+        title:'Tencent-we'
+      },
+      {
+        id:'62',
+        title:'展望'
+      },
+      {
+        id:'63',
+        title:'与FT共进下午茶'
+      },//59(iPhone测试页)、60（Android测试页）
+      {
+        id:'64',
+        title:'金砖五国峰会'
+      },
+      {
+        id:'65',
+        title:'Bad News'
+      }
+    ]
+  },
+];
+
+var adChannelsMobile = [
+  {
+    id:'10',
+    title:'首页',
+    sub:[
+      {
+        id:'00',
+        title:'首页'
       }
     ]
   },
   {
-    id:"21",
-    title:"创新经济",
-    sub:[//MARK:以下二级频道应该是21xx，但excel上是20xx，应该要改过来吧？
+    id:'11',
+    title:'中国',
+    sub:[
       {
-        id:"00",
-        title:"首页"
-      },
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'12',
+    title:'全球',
+    sub:[
       {
-        id:"55",
-        title:"投资英国"
-      },
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'13',
+    title:'经济',
+    sub:[
       {
-        id:"56",
-        title:"智能城市"
-      },
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'14',
+    title:'金融市场',
+    sub:[
       {
-        id:"57",
-        title:"存储世界"
-      },
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'15',
+    title:'商业',
+    sub:[
       {
-        id:"58",
-        title:"调研页频道"
-      },//59(iPhone测试页)、60（Android测试页）
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'16',
+    title:'观点',
+    sub:[
       {
-        id:"61",
-        title:"Tencent-we"
-      },
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'17',
+    title:'管理',
+    sub:[
       {
-        id:"62",
-        title:"展望"
-      },
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'18',
+    title:'生活时尚',
+    sub:[
       {
-        id:"63",
-        title:"与FT共进下午茶"
-      },//59(iPhone测试页)、60（Android测试页）
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },
+  {
+    id:'19',
+    title:'视频',
+    sub:[
       {
-        id:"64",
-        title:"金砖五国峰会"
-      },
-      {
-        id:"65",
-        title:"Bad News"
+        id:'00',
+        title:'首页'
       }
     ]
   },
   
+  {
+    id:'20',
+    title:'创新经济',
+    sub:[
+      {
+        id:'00',
+        title:'首页'
+      }
+    ]
+  },// MARK:以上10-20都为正规传统频道页；以下50开头的为其他频道及内容（包括特别报道专题等），对应之前大表的20开头频道；20-50为预留频道，预留给之后新增的正式频道
+  {
+    id:'50',
+    title:'其他频道及内容',
+    sub:[
+      {
+        id:'00',
+        title:'首页'
+      },
+      {
+        id:'01',
+        title:'朝九晚五'
+      },
+      {
+        id:'02',
+        title:'年度报告'
+      },
+      {
+        id:'03',
+        title:'博鉴'
+      },
+      {
+        id:'04',
+        title:'艺术品投资'
+      },
+      {
+        id:'05',
+        title:'G20_2'
+      },
+      {
+        id:'06',
+        title:'影响世界的人物'
+      },
+      {
+        id:'07',
+        title:'商旅目的地'
+      },
+      {
+        id:'08',
+        title:'达沃斯'
+      },
+      {
+        id:'09',
+        title:'图辑'
+      },
+      {
+        id:'10',
+        title:'车展'
+      },
+      {
+        id:'11',
+        title:'巅峰女性'
+      },
+      {
+        id:'12',
+        title:'城市未来'
+      },
+      {
+        id:'13',
+        title:'与FT共进午餐'
+      },
+      {
+        id:'14',
+        title:'能源未来'
+      },
+      {
+        id:'15',
+        title:'商务体育'
+      },//17/18是首页测试_北京、内页测试——北京
+      {
+        id:'16',
+        title:'焦点女性'
+      },
+      {
+        id:'19',
+        title:'市场'
+      },
+      {
+        id:'20',
+        title:'会议'
+      },//21(iPad),22(iPhone),23(Android),24(其他手机)
+      {
+        id:'25',
+        title:'今日焦点'
+      },
+      {
+        id:'26',
+        title:'午后更新'
+      },
+      {
+        id:'27',
+        title:'一周精选'
+      },
+      {
+        id:'28',
+        title:'两会'
+      },
+      {
+        id:'29',
+        title:'腕表与珠宝'
+      },
+      {
+        id:'30',
+        title:'G7峰会'
+      },
+      {
+        id:'31',
+        title:'新中坚力量'
+      },
+      {
+        id:'32',
+        title:'我走过的世界'
+      },
+      {
+        id:'33',
+        title:'View From The Top'
+      },
+      {
+        id:'34',
+        title:'Luxury Spending'
+      },//35(首页测试_上海)、36（内页测试_上海）、37（首页测试_海外）、38（内页测试_海外）
+      {
+        id:'39',
+        title:'简氏酒庄'
+      },//40(View From The Top_iPad)/41(Android App)/(Android APP测试)
+      {
+        id:'40',
+        title:'View From The Top_iPad'//这是和设备挂钩的么？？
+      },
+      {
+        id:'43',
+        title:'生活时尚_艺术与娱乐'
+      },
+      {
+        id:'44',
+        title:'生活时尚_品味'
+      },
+      {
+        id:'45',
+        title:'生活时尚_生活话题'
+      },
+      {
+        id:'46',
+        title:'生活时尚_消费经'
+      },
+      {
+        id:'47',
+        title:'生活时尚_理财'
+      },
+      {
+        id:'48',
+        title:'奢华水上'
+      },
+      {
+        id:'49',
+        title:'礼待天下'
+      },
+      {
+        id:'50',
+        title:'FT 研究院'
+      },
+      {
+        id:'51',
+        title:'全球商业的未来'
+      },
+      {
+        id:'52',
+        title:'极致人生'
+      },//53:移动端测试
+      {
+        id:'54',
+        title:'会员信息中心'
+      },
+      {
+        id:'55',
+        title:'投资英国'
+      },
+      {
+        id:'56',
+        title:'智能城市'
+      },
+      {
+        id:'57',
+        title:'存储世界'
+      },
+      {
+        id:'58',
+        title:'调研页频道'
+      },//59(iPhone测试页)、60（Android测试页）
+      {
+        id:'61',
+        title:'Tencent-we'
+      },
+      {
+        id:'62',
+        title:'展望'
+      },
+      {
+        id:'63',
+        title:'与FT共进下午茶'
+      },//59(iPhone测试页)、60（Android测试页）
+      {
+        id:'64',
+        title:'金砖五国峰会'
+      },
+      {
+        id:'65',
+        title:'Bad News'
+      }
+    ]
+  },
 ]
