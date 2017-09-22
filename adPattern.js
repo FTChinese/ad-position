@@ -1,167 +1,160 @@
 var adPatternPC = [
   {
-    id:"01",
-    title:"Banner",
-    describe:"Banner可出现在所有设备上。在一个页面中从上到下顺序出现，最多出现四个。id和num.id拼成某个具体广告位号码的最后四位。",
-    num:[
+    id:'01',
+    pattern:'Banner',
+    describe:'和页面等宽的长带状。该pattern在首页、频道页和文章页均有出现。在一个页面中从上到下顺序出现。id和position.id拼成某个具体广告位号码的最后四位。',
+    position:[
       {
-        id:"01"
+        id:'01',
+        describe:'页面从上至下第一个Banner广告位。原编号0001。'
       },
       {
-        id:"02"
+        id:'02',
+        describe:'页面从上至下第二个Banner广告位。原编号0006。'
       },
       {
-        id:"03"
+        id:'03',
+        describe:'页面从上至下第三个Banner广告位。原编号0007。'
+
       },
       {
-        id:"04"
+        id:'04',
+        describe:'页面从上之下第四个Banner广告位。原编号0008。'
       }
     ] 
   },
   {
-    id:"02",
-    title:"Button",
-    num:[
-      {
-        id:"01"
-      }
-    ],
-    describe:""
-  },
-  {
-    id:"03",
-    title:"MPU",
-    describe:"MPU可出现在任何设备。id和num.id拼成某个具体广告位号码的最后四位。",
-    num:[
-      {
-        id:"01",
-        describe:""
+    id:'02',
+    pattern:'MPU',
+    describe:'矩形状，主要尺寸为300x250,在页面侧边时尺寸还可以为300x600等。该pattern在首页、频道页和文章页均有出现。id和position.id拼成某个具体广告位号码的最后四位。对于position.id而言："0x"形式的为右侧栏从上至下的MPU，该处尺寸可为300x250或300x600;"1x"形式的为文章页文章正文中从上至下插入的MPU,该处尺寸只能为300x250;"2x"形式的为除右侧栏和文章正文中的MPU这两个主要MPU出现区域外，其他地方插入的MPU',
+    position:[
+      {//'0x'形式的为右侧栏从上至下的MPU
+        id:'01',
+        describe:'页面（包括首页、频道页、文章页）右侧从上至下第一个方块。'
       },
       {
-        id:"02",
-        describe:""
+        id:'02',
+        describe:'页面（包括首页、频道页、文章页）右侧从上至下第二个方块。'
+      },
+      {//'1x'形式的为文章页文章正文中从上至下插入的MPU
+        id:'11',
+        describe:'文章页文章正文中从上至下插入的第一个方块。'
       },
       {
-        id:"03",
-        describe:""
-      }
+        id:'12',
+        describe:'文章页文章正文中从上至下插入的第二个方块。'
+      },
+      {//'2x'形式的为除右侧栏和文章正文中的MPU这两个主要MPU出现区域外，其他地方插入的MPU
+        id:'21',
+        describe:'首页左侧"热门文章"栏目下面的方块。'
+      },
     ]  
   },
   {
-    id:"04",
-    title:"Ribbon",
-    describe:"",
-    num:[
+    id:'03',
+    pattern:'Ribbon',
+    describe:'短带状',
+    position:[
       {
-        id:"01",
-        describe:"右侧上部短带状"
+        id:'01',
+        describe:'页面右侧栏顶部的短带状'
       }
     ]
   },
   {
-    id:"05",
-    title:"Full Screen",
-    num:[
+    id:'05',
+    pattern:'Start Ad',
+    describe:'700x520的大矩形状。',
+    position:[
       {
-        id:"01",
-        describe:"Full Screen位置仅一种，即PC首页"
+        id:'01',
+        describe:'进入网站时首先看到的空白页面上的大广告。之后才进入网站页面。'
       }
     ]
   },
   {
-    id:"06",
-    title:"Text_Link",
-    describe:"Text_Link只有PC首页有，出现在右侧，三个",
-    num:[
+    id:'06',
+    pattern:'Text_Link',
+    describe:'文字链。该Pattern可出现在页面右侧栏上部。',
+    position:[
       {
-        id:"01",
-        describe:""
+        id:'01',
+        describe:'页面右侧栏上部区域从上至下第一个Text_Link。'
       },
       {
-        id:"02",
-        describe:""
+        id:'02',
+        describe:'页面右侧栏上部区域从上至下第一个Text_Link。'
       },
       {
-        id:"03",
-        describe:""
+        id:'03',
+        describe:'页面右侧栏上部区域从上至下第一个Text_Link。'
       }
     ]
   },
   {
-    id:"07",
-    title:"event",
-    describe:"",
-    num:[
+    id:'08',
+    pattern:'Inread(1x1)',
+    position:[
       {
-        id:"01",
-        describe:""
+        id:'01',
+        describe:''
+      }
+    ]
+  },
+  {
+    id:'09',
+    pattern:'Inread ad_590*400',
+    describe:'',
+    position:[
+      {
+        id:'01',
+        describe:''
+      }
+    ]
+  },
+  {
+    id:'10',
+    pattern:'Opening_AD',
+    describe:'',
+    position:[
+      {
+        id:'01',
+        describe:''
+      }
+    ]
+  },
+  
+  {
+    id:'12',
+    pattern:'Information_image',
+    describe:'',
+    position:[
+      {
+        id:'01',
+        describe:''
       },
       {
-        id:"02",
-        describe:""
-      },
-      {
-        id:"03",
-        describe:""
-      }
-    ]
-  },
-  {
-    id:"08",
-    title:"Inread(1x1)",
-    num:[
-      {
-        id:"01",
-        describe:""
-      }
-    ]
-  },
-  {
-    id:"09",
-    title:"Inread ad_590*400",
-    describe:"",
-    num:[
-      {
-        id:"01",
-        describe:""
-      }
-    ]
-  },
-  {
-    id:"10",
-    title:"Opening_AD",
-    describe:"",
-    num:[
-      {
-        id:"01",
-        describe:""
-      }
-    ]
-  },
-  {
-    id:"11",
-    title:"Opening_AD (App)",
-    describe:"",
-    num:[
-      {
-        id:"01",
-        describe:"app开机广告"
-      }
-    ]
-  },
-  {
-    id:"12",
-    title:"Information_image",
-    describe:"",
-    num:[
-      {
-        id:"01",
-        describe:""
-      },
-      {
-        id:"02",
-        describe:""
+        id:'02',
+        describe:''
       }
     ]
   }
+]
+
+var adPatternPhone = [
+  {
+    id:'11',
+    pattern:'Opening_AD (App)',
+    describe:'',
+    position:[
+      {
+        id:'01',
+        describe:'app开机广告'
+      }
+    ]
+  }
+]
+
+var adPatternPad = [
+  
 ]
