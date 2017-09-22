@@ -1,53 +1,66 @@
 var adPatternPC = [
   {
     id:'01',
-    pattern:'Banner',
-    describe:'和页面等宽的长带状。该pattern在首页、频道页和文章页均有出现。在一个页面中从上到下顺序出现。id和position.id拼成某个具体广告位号码的最后四位。',
+    pattern:'Full Screen',
+    describe:'进入网站后时首先看到的大块全屏广告。',
     position:[
       {
         id:'01',
-        describe:'页面从上至下第一个Banner广告位。原编号0001。'
+        describe:'进入网站后时首先看到的大块全屏广告。'
+      }
+    ]
+  },
+  {
+    id:'02',
+    pattern:'Leaderboard',
+    describe:'页面上部导航栏下方的长带状广告。注：如无特别说明，“页面”指所有常规页面，包括首页、频道页、文章页，下同。',
+    position:[
+      {
+        id:'01',
+        describe:'页面上部导航栏下方的长带状广告。'
+      }
+    ]
+  },
+  {
+    id:'03',
+    pattern:'Banner',
+    describe:'页面中部穿插的长带状广告（页面导航栏下方的长带状广告除外，其叫做LeaderBoard，见上）。从上到下顺序出现。',
+    position:[
+      {
+        id:'01',
+        describe:'页面从上至下第一个Banner位。'
       },
       {
         id:'02',
-        describe:'页面从上至下第二个Banner广告位。原编号0006。'
+        describe:'页面从上至下第二个Banner位。'
       },
       {
         id:'03',
-        describe:'页面从上至下第三个Banner广告位。原编号0007。'
-
-      },
-      {
-        id:'04',
-        describe:'页面从上之下第四个Banner广告位。原编号0008。'
+        describe:'页面从上至下第三个Banner位。'
       }
     ] 
   },
   {
-    id:'02',
+    id:'04',
     pattern:'MPU',
-    describe:'矩形状，主要尺寸为300x250,在页面侧边时尺寸还可以为300x600等。该pattern在首页、频道页和文章页均有出现。id和position.id拼成某个具体广告位号码的最后四位。对于position.id而言："0x"形式的为右侧栏从上至下的MPU，该处尺寸可为300x250或300x600;"1x"形式的为文章页文章正文中从上至下插入的MPU,该处尺寸只能为300x250;"2x"形式的为除右侧栏和文章正文中的MPU这两个主要MPU出现区域外，其他地方插入的MPU',
+    describe:'页面中的块状广告。出现顺序为：右侧侧边栏从上至下排列，然后页面正文由上至下穿插',
     position:[
-      {//'0x'形式的为右侧栏从上至下的MPU
+      {
         id:'01',
-        describe:'页面（包括首页、频道页、文章页）右侧从上至下第一个方块。'
+        describe:'页面右侧从上至下第1个MPU位。'
       },
       {
         id:'02',
-        describe:'页面（包括首页、频道页、文章页）右侧从上至下第二个方块。'
-      },
-      {//'1x'形式的为文章页文章正文中从上至下插入的MPU
-        id:'11',
-        describe:'文章页文章正文中从上至下插入的第一个方块。'
+        describe:'如页面右侧有两个MPU位, 则其为页面右侧从上至下排列的第2个MPU位；如页面右侧有且仅有一个MPU位，则其为页面正文由上至下穿插的第1个MPU位。'
       },
       {
-        id:'12',
-        describe:'文章页文章正文中从上至下插入的第二个方块。'
+        id:'03',
+        describe:'如页面右侧有两个MPU位, 则其为页面正文由上至下穿插的第1个MPU位；如页面右侧有且仅有一个MPU位，则其为页面正文由上至下穿插的第2个MPU位。'
       },
-      {//'2x'形式的为除右侧栏和文章正文中的MPU这两个主要MPU出现区域外，其他地方插入的MPU
-        id:'21',
-        describe:'首页左侧"热门文章"栏目下面的方块。'
-      },
+      {
+        id:'04',
+        describe:'如页面右侧有两个MPU位, 则其为页面正文由上至下穿插的第2个MPU位。'
+      }
     ]  
   },
   {
@@ -61,17 +74,7 @@ var adPatternPC = [
       }
     ]
   },
-  {
-    id:'05',
-    pattern:'Start Ad',
-    describe:'700x520的大矩形状。',
-    position:[
-      {
-        id:'01',
-        describe:'进入网站时首先看到的空白页面上的大广告。之后才进入网站页面。'
-      }
-    ]
-  },
+  
   {
     id:'06',
     pattern:'Text_Link',
@@ -143,18 +146,96 @@ var adPatternPC = [
 
 var adPatternPhone = [
   {
-    id:'11',
-    pattern:'Opening_AD (App)',
-    describe:'',
+    id:'01',
+    pattern:'Full Screen',
+    describe:'进入手机端网站或App时看到的大块全屏广告。',
     position:[
       {
         id:'01',
-        describe:'app开机广告'
+        describe:'手机端网页形式的全屏广告。'
+      },
+      {
+        id:'02',
+        describe:'手机端原生形式的全屏广告。'
       }
     ]
+  },
+  {
+    id:'03',
+    pattern:'Banner',
+    describe:'手机端页面顶部、底部的带状广告。',
+    position:[
+      {
+        id:'01',
+        describe:'手机端页面顶部的带状广告。'
+      },
+      {
+        id:'02',
+        describe:'手机端页面底部的带状广告。'
+      }
+    ] 
+  },
+  {
+    id:'04',
+    pattern:'MPU',
+    describe:'页面中的块状广告。页面由上至下穿插。',
+    position:[
+      {
+        id:'01',
+        describe:'页面从上至下第1个MPU位。'
+      },
+      {
+        id:'02',
+        describe:'页面从上至下第2个MPU位。'
+      }
+    ]  
   }
 ]
 
 var adPatternPad = [
-  
+  {
+    id:'01',
+    pattern:'Full Screen',
+    describe:'进入pad网站或App时看到的大块全屏广告。',
+    position:[
+      {
+        id:'01',
+        describe:'pad端网页形式的全屏广告。'
+      },
+      {
+        id:'02',
+        describe:'pad端原生形式的全屏广告。'
+      }
+    ]
+  },
+  {
+    id:'03',
+    pattern:'Banner',
+    describe:'pad端页面顶部横向、纵向的广告。',
+    position:[
+      {
+        id:'01',
+        describe:'pad端页面顶部的横向广告。'
+      },
+      {
+        id:'02',
+        describe:'pad端页面底部的纵向广告。'
+      }
+    ] 
+  },
+   {
+    id:'04',
+    pattern:'MPU',
+    describe:'页面中的块状广告。页面由上至下穿插。',//QUEST,也应该是先排完右侧，再排中部。
+    position:[
+      {
+        id:'01',
+        describe:'页面从上至下第1个MPU位。'
+      },
+      {
+        id:'02',
+        describe:'页面从上至下第2个MPU位。'
+      }
+    ]  
+  },
 ]
