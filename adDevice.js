@@ -8,21 +8,42 @@ var adDevices = [
   },
   {
     id:'2000',
-    title:'iPhone',
+    title:'iPhone App',
     description: 'iPhone打开的App',
     pattern: adPatternPhone,
     channels: adChannelsMobile//Quest:这个Mobie指的是Appd的意思吧？因为Mobile也可能用网页打开
   },
   {
     id:'3000',
-    title:'Android',
+    title:'iPhone Web',
+    description: 'iPhone打开的App',
+    pattern: adPatternPhone,
+    channels: adChannelsMobile//Quest:这个Mobie指的是Appd的意思吧？因为Mobile也可能用网页打开
+  },
+  {
+    id:'4000',
+    title:'Android App',
     description: 'Android打开的App',
     pattern: adPatternPhone,
     channels: adChannelsMobile
   },
   {
-    id:'4000',
+    id:'5000',
+    title:'Android Web',
+    description: 'Android打开的App',
+    pattern: adPatternPhone,
+    channels: adChannelsMobile
+  },
+  {
+    id:'6000',
     title:'iPad',
+    description: 'iPad打开的App',
+    pattern: adPatternPad,
+    channels: adChannelsMobile
+  },
+  {
+    id:'7000',
+    title:'iPad Web',
     description: 'iPad打开的App',
     pattern: adPatternPad,
     channels: adChannelsMobile
