@@ -2,60 +2,58 @@ var adPatternPC = {
   FullScreen: {
     id:'01',
     describe:'进入网站后时首先看到的大块全屏广告。',
-    position:[
-      {
+    position:{
+      Num1:{
         id:'01',
-        describe:'进入网站后时首先看到的大块全屏广告。'
+        describe:'进入网站后时的FullScreen位。'
       }
-    ]
+    }
   },
   Leaderboard: {
     id:'02',
-    describe:'页面上部导航栏下方的长带状广告。注：如无特别说明，“页面”指所有常规页面，包括首页、频道页、文章页，下同。',
-    position:[
-      {
+    describe:'页面上部导航栏下方的长带状广告。此处的页面包括首页、频道页、文章页。',
+    position:{
+      Num1: {
         id:'01',
-        describe:'页面上部导航栏下方的长带状广告。'
+        describe:'页面上部导航栏下方的Leaderboard位。'
       }
-    ]
+    }
   },
   Banner: {
     id:'03',
-    pattern:'Banner',
-    describe:'页面中部穿插的长带状广告（页面导航栏下方的长带状广告除外，其叫做LeaderBoard，见上）。从上到下顺序出现。',
-    position:[
-      {
+    describe:'页面中部穿插的长带状广告（页面导航栏下方的长带状广告除外，其叫做LeaderBoard，见上）。此处的页面包括首页、频道页、文章页。从上到下顺序出现。',
+    position:{
+      Top1:{
         id:'01',
         describe:'页面从上至下第一个Banner位。'
       },
-      {
+      Top2:{
         id:'02',
         describe:'页面从上至下第二个Banner位。'
       },
-      {
+      Top3:{
         id:'03',
         describe:'页面从上至下第三个Banner位。'
       }
-    ] 
+    } 
   },
   MPU: {
     id:'04',
-    pattern:'MPU',
-    describe:'页面中的块状广告。出现顺序为：右侧侧边栏从上至下排列，然后页面正文由上至下穿插',
+    describe:'页面中的块状广告。此处的页面包含首页、频道页、文章页。出现顺序为：右侧侧边栏从上至下排列，然后页面正文由上至下穿插',
     position:{
-      right1: {
+      Right1: {
         id:'11',
         describe:'页面右侧从上至下第1个MPU位。'
       },
-      right2: {
+      Right2: {
         id:'12',
         describe:'页面右侧从上至下第2个MPU位。'
       },
-      halfPage1: {
+      HalfPage1: {
         id:'21',
         describe:'页面中间穿插的第1个MPU位。'
       },
-      halfPage2: {
+      HalfPage2: {
         id:'22',
         describe:'页面中间穿插的第2个MPU位。'
       }
@@ -63,192 +61,152 @@ var adPatternPC = {
   },
   Ribbon: {
     id:'03',
-    describe:'短带状。该Pattern可出现在首页右侧栏顶部上部。',
-    position:[
-      {
+    describe:'首页右侧栏顶部的端带状广告。',
+    position:{
+      Top1: {
         id:'01',
-        describe:'首页右侧栏顶部的短带状'
+        describe:'首页右侧栏顶部Ribbon位'
       }
-    ]
+    }
   },
   TextLink: {
     id:'06',
-    describe:'文字链广告。该Pattern可出现在首页右侧栏上部。',
-    position:[
-      {
+    describe:'首页右侧栏的文字链广告。',
+    position:{
+      Top1: {
         id:'01',
-        describe:'页面右侧栏上部区域从上至下第一个Text_Link。'
+        describe:'页面右侧栏从上至下第1个TextLink位。'
       },
-      {
+      Top2: {
         id:'02',
-        describe:'页面右侧栏上部区域从上至下第一个Text_Link。'
+        describe:'页面右侧栏从上至下第2个TextLink位。'
       },
-      {
+      Top3: {
         id:'03',
-        describe:'页面右侧栏上部区域从上至下第一个Text_Link。'
+        describe:'页面右侧栏从上至下第3个TextLink位。'
       }
-    ]
+    }
   },
   Event: {
     id:'07',
-    describe:'会员活动广告。该Pattern可出现在首页内容部分的最后一部分——“会员活动”部分。出现顺序为：从左至右，从上之下，排满4个',
-    position:[
-      {
+    describe:'首页“会员活动”部分的会员活动广告。出现顺序为：根据网页大小响应式从左至右从上至下排列。',
+    position:{
+      Num1:{
         id:'01',
-        describe:'“会员活动”部分第1个广告位'
+        describe:'首页“会员活动”部分第1个Event位'
       },
-      {
+      Num2:{
         id:'02',
-        describe:'“会员活动”部分第2个广告位'
+        describe:'首页“会员活动”部分第2个Event位'
       },
-      {
+      Num3:{
         id:'03',
-        describe:'“会员活动”部分第3个广告位'
+        describe:'首页“会员活动”部分第3个Event位'
       },
-      {
+      Num4:{
         id:'04',
-        describe:'“会员活动”部分第4个广告位'
+        describe:'首页“会员活动”部分第4个Event位'
       }
-    ]
+    }
   },
   Inread: {
     id:'09',
     describe:'文章页中嵌入的、随着阅读位置的改变而出现的广告',
-    position:[
-      {
+    position:{
+      The1x1: {
         id:'01',
         describe:'1x1的Inread广告。'
       },
-      {
+      The590x400: {
         id:'02',
         describe:'590x400的Inread广告。'
       }
-    ]
+    }
   }
 }
 
-var adPatternPhone = [//QUEST这个Pattern也应该指的是App吧？因为Phone打开App和网页广告位是不一样的，还是说应该统一起来？
-  {
+var adPatternPhone = {//QUEST这个Pattern也应该指的是App吧？因为Phone打开App和网页广告位是不一样的，还是说应该统一起来？
+  FullScreen: {
     id:'01',
-    pattern:'Full Screen',
-    describe:'进入手机App时看到的大块全屏广告。',
-    position:[
-      {
+    describe:'进入手机App时看到的全屏广告。',
+    position:{
+      Web: {
         id:'01',
         describe:'以网页形式投放的全屏广告。'
       },
-      {
+      Native: {
         id:'02',
         describe:'以原生形式投放的全屏广告。'
       }
-    ]
+    }
   },
-  {
+  Banner: {
     id:'03',
-    pattern:'Banner',
     describe:'手机端页面顶部、底部的带状广告。',
-    position:[
-      {
+    position:{
+      Top:{
         id:'01',
         describe:'手机端页面顶部的带状广告。'
       },
-      {
+      Bottom: {
         id:'02',
         describe:'手机端页面底部的带状广告。'
       }
-    ] 
+    } 
   },
-  {
+  MPU: {
     id:'04',
-    pattern:'MPU',
-    describe:'页面中的块状广告。页面由上至下穿插。',
-    position:[
-      {
+    describe:'页面中的块状广告。由上至下穿插。',
+    position:{
+      HalfPage1:{
         id:'01',
         describe:'页面从上至下第1个MPU位。'
       },
-      {
+      HalfPage2:{
         id:'02',
         describe:'页面从上至下第2个MPU位。'
       }
-    ]  
+    } 
   },
-  {
+  Information: {
     id:'08',
-    pattern:'Information_image',
-    describe:'信息流广告，嵌入在首页文章列表中',
-    position:[
-      {
+    describe:'首页文章列表中嵌入的信息流广告。',
+    position: {
+      Num1: {
         id:'01',
         describe:'从上至下第1个信息流广告位'
       },
-      {
+      Num2: {
         id:'02',
         describe:'从上至下第2个信息流广告位'
       }
-    ]
+    }
   }
-]
+}
 
-var adPatternPad = [
-  {
+var adPatternPad = {
+  FullScreen: {
     id:'01',
-    pattern:'Full Screen',
     describe:'进入pad端App时看到的大块全屏广告。',
     position:[
       {
         id:'01',
-        describe:'pad端网页形式的全屏广告。'
+        describe:'pad端网页形式的FullScreen位。'
       },
       {
         id:'02',
-        describe:'pad端原生形式的全屏广告。'
+        describe:'pad端原生形式的FullScreen位。'
       }
     ]
   },
-  {
-    id:'03',
-    pattern:'Banner',
-    describe:'pad端页面顶部横向、纵向的广告。',
-    position:[
-      {
-        id:'01',
-        describe:'pad端页面顶部的横向广告。'
-      },
-      {
-        id:'02',
-        describe:'pad端页面底部的纵向广告。'
-      }
-    ] 
-  },
-  {
+  MPU: {
     id:'04',
-    pattern:'MPU',
-    describe:'页面中的块状广告。页面由上至下穿插。',//QUEST,也应该是先排完右侧，再排中部。
-    position:[
-      {
+    describe:'页面右上角的块状广告。此处的页面包含首页、频道页、文章页。',
+    position:{
+      RightTop: {
         id:'01',
-        describe:'页面从上至下第1个MPU位。'
-      },
-      {
-        id:'02',
-        describe:'页面从上至下第2个MPU位。'
+        describe:'页面右上角的MPU位。'
       }
-    ]  
-  },
-  {
-    id:'08',
-    pattern:'Information_image',
-    describe:'',
-    position:[
-      {
-        id:'01',
-        describe:''
-      },
-      {
-        id:'02',
-        describe:''
-      }
-    ]
+    }
   }
-]
+}
