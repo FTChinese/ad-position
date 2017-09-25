@@ -1,7 +1,6 @@
-var adPatternPC = [
-  {
+var adPatternPC = {
+  FullScreen: {
     id:'01',
-    pattern:'Full Screen',
     describe:'进入网站后时首先看到的大块全屏广告。',
     position:[
       {
@@ -10,9 +9,8 @@ var adPatternPC = [
       }
     ]
   },
-  {
+  Leaderboard: {
     id:'02',
-    pattern:'Leaderboard',
     describe:'页面上部导航栏下方的长带状广告。注：如无特别说明，“页面”指所有常规页面，包括首页、频道页、文章页，下同。',
     position:[
       {
@@ -21,7 +19,7 @@ var adPatternPC = [
       }
     ]
   },
-  {
+  Banner: {
     id:'03',
     pattern:'Banner',
     describe:'页面中部穿插的长带状广告（页面导航栏下方的长带状广告除外，其叫做LeaderBoard，见上）。从上到下顺序出现。',
@@ -40,32 +38,31 @@ var adPatternPC = [
       }
     ] 
   },
-  {
+  MPU: {
     id:'04',
     pattern:'MPU',
     describe:'页面中的块状广告。出现顺序为：右侧侧边栏从上至下排列，然后页面正文由上至下穿插',
-    position:[
-      {
-        id:'01',
+    position:{
+      right1: {
+        id:'11',
         describe:'页面右侧从上至下第1个MPU位。'
       },
-      {
-        id:'02',
-        describe:'如页面右侧有两个MPU位, 则其为页面右侧从上至下排列的第2个MPU位；如页面右侧有且仅有一个MPU位，则其为页面正文由上至下穿插的第1个MPU位。'
+      right2: {
+        id:'12',
+        describe:'页面右侧从上至下第2个MPU位。'
       },
-      {
-        id:'03',
-        describe:'如页面右侧有两个MPU位, 则其为页面正文由上至下穿插的第1个MPU位；如页面右侧有且仅有一个MPU位，则其为页面正文由上至下穿插的第2个MPU位。'
+      halfPage1: {
+        id:'21',
+        describe:'页面中间穿插的第1个MPU位。'
       },
-      {
-        id:'04',
-        describe:'如页面右侧有两个MPU位, 则其为页面正文由上至下穿插的第2个MPU位。'
+      halfPage2: {
+        id:'22',
+        describe:'页面中间穿插的第2个MPU位。'
       }
-    ]  
+    }  
   },
-  {
+  Ribbon: {
     id:'03',
-    pattern:'Ribbon',
     describe:'短带状。该Pattern可出现在首页右侧栏顶部上部。',
     position:[
       {
@@ -74,9 +71,8 @@ var adPatternPC = [
       }
     ]
   },
-  {
+  TextLink: {
     id:'06',
-    pattern:'Text_Link',
     describe:'文字链广告。该Pattern可出现在首页右侧栏上部。',
     position:[
       {
@@ -93,9 +89,8 @@ var adPatternPC = [
       }
     ]
   },
-  {
+  Event: {
     id:'07',
-    pattern:'Event',
     describe:'会员活动广告。该Pattern可出现在首页内容部分的最后一部分——“会员活动”部分。出现顺序为：从左至右，从上之下，排满4个',
     position:[
       {
@@ -116,9 +111,8 @@ var adPatternPC = [
       }
     ]
   },
-  {
+  Inread: {
     id:'09',
-    pattern:'Inread',
     describe:'文章页中嵌入的、随着阅读位置的改变而出现的广告',
     position:[
       {
@@ -131,7 +125,7 @@ var adPatternPC = [
       }
     ]
   }
-]
+}
 
 var adPatternPhone = [//QUEST这个Pattern也应该指的是App吧？因为Phone打开App和网页广告位是不一样的，还是说应该统一起来？
   {
