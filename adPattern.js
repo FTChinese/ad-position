@@ -66,19 +66,18 @@ var adPatternPC = [
   {
     id:'03',
     pattern:'Ribbon',
-    describe:'短带状',
+    describe:'短带状。该Pattern可出现在首页右侧栏顶部上部。',
     position:[
       {
         id:'01',
-        describe:'页面右侧栏顶部的短带状'
+        describe:'首页右侧栏顶部的短带状'
       }
     ]
   },
-  
   {
     id:'06',
     pattern:'Text_Link',
-    describe:'文字链。该Pattern可出现在页面右侧栏上部。',
+    describe:'文字链广告。该Pattern可出现在首页右侧栏上部。',
     position:[
       {
         id:'01',
@@ -95,68 +94,58 @@ var adPatternPC = [
     ]
   },
   {
-    id:'08',
-    pattern:'Inread(1x1)',
+    id:'07',
+    pattern:'Event',
+    describe:'会员活动广告。该Pattern可出现在首页内容部分的最后一部分——“会员活动”部分。出现顺序为：从左至右，从上之下，排满4个',
     position:[
       {
         id:'01',
-        describe:''
+        describe:'“会员活动”部分第1个广告位'
+      },
+      {
+        id:'02',
+        describe:'“会员活动”部分第2个广告位'
+      },
+      {
+        id:'03',
+        describe:'“会员活动”部分第3个广告位'
+      },
+      {
+        id:'04',
+        describe:'“会员活动”部分第4个广告位'
       }
     ]
   },
   {
     id:'09',
-    pattern:'Inread ad_590*400',
-    describe:'',
+    pattern:'Inread',
+    describe:'文章页中嵌入的、随着阅读位置的改变而出现的广告',
     position:[
       {
         id:'01',
-        describe:''
-      }
-    ]
-  },
-  {
-    id:'10',
-    pattern:'Opening_AD',
-    describe:'',
-    position:[
-      {
-        id:'01',
-        describe:''
-      }
-    ]
-  },
-  
-  {
-    id:'12',
-    pattern:'Information_image',
-    describe:'',
-    position:[
-      {
-        id:'01',
-        describe:''
+        describe:'1x1的Inread广告。'
       },
       {
         id:'02',
-        describe:''
+        describe:'590x400的Inread广告。'
       }
     ]
   }
 ]
 
-var adPatternPhone = [
+var adPatternPhone = [//QUEST这个Pattern也应该指的是App吧？因为Phone打开App和网页广告位是不一样的，还是说应该统一起来？
   {
     id:'01',
     pattern:'Full Screen',
-    describe:'进入手机端网站或App时看到的大块全屏广告。',
+    describe:'进入手机App时看到的大块全屏广告。',
     position:[
       {
         id:'01',
-        describe:'手机端网页形式的全屏广告。'
+        describe:'以网页形式投放的全屏广告。'
       },
       {
         id:'02',
-        describe:'手机端原生形式的全屏广告。'
+        describe:'以原生形式投放的全屏广告。'
       }
     ]
   },
@@ -189,6 +178,21 @@ var adPatternPhone = [
         describe:'页面从上至下第2个MPU位。'
       }
     ]  
+  },
+  {
+    id:'08',
+    pattern:'Information_image',
+    describe:'信息流广告，嵌入在首页文章列表中',
+    position:[
+      {
+        id:'01',
+        describe:'从上至下第1个信息流广告位'
+      },
+      {
+        id:'02',
+        describe:'从上至下第2个信息流广告位'
+      }
+    ]
   }
 ]
 
@@ -196,7 +200,7 @@ var adPatternPad = [
   {
     id:'01',
     pattern:'Full Screen',
-    describe:'进入pad网站或App时看到的大块全屏广告。',
+    describe:'进入pad端App时看到的大块全屏广告。',
     position:[
       {
         id:'01',
@@ -223,7 +227,7 @@ var adPatternPad = [
       }
     ] 
   },
-   {
+  {
     id:'04',
     pattern:'MPU',
     describe:'页面中的块状广告。页面由上至下穿插。',//QUEST,也应该是先排完右侧，再排中部。
@@ -238,4 +242,19 @@ var adPatternPad = [
       }
     ]  
   },
+  {
+    id:'08',
+    pattern:'Information_image',
+    describe:'',
+    position:[
+      {
+        id:'01',
+        describe:''
+      },
+      {
+        id:'02',
+        describe:''
+      }
+    ]
+  }
 ]
