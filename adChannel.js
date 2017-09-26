@@ -296,7 +296,7 @@ var adChannelsPC = {
       },
       BOAO: {
         id:'03',
-        title:'博鉴'
+        title:'博鳌'
       },
       ArtInvestment: {
         id:'04',
@@ -588,6 +588,16 @@ var adChannelsMobile = {
       }
     }
   },
+  Innovation: {
+    id:'20',
+    title:'创新经济',
+    sub:{
+      Home: {
+        id:'00',
+        title:'首页'
+      }
+    }
+  },
   // MARK:以上10-20都为正规传统频道页；以下50开头的为其他频道及内容（包括特别报道专题等），对应之前大表的20开头频道；20-50为预留频道，预留给之后新增的正式频道
   OtherPage: {
     id:'50',
@@ -597,33 +607,17 @@ var adChannelsMobile = {
         id:'00',
         title:'首页'
       },
-      NineToFive:{
-        id:'01',
-        title:'朝九晚五'
-      },
       AnnualReport: {
         id:'02',
         title:'年度报告'
       },
       BOAO: {
         id:'03',
-        title:'博鉴'
-      },
-      ArtInvestment: {
-        id:'04',
-        title:'艺术品投资'
+        title:'博鳌'
       },
       G20_2: {
         id:'05',
         title:'G20_2'
-      },
-      PersonInthenews: {
-        id:'06',
-        title:'影响世界的人物'
-      },
-      Destinate: {
-        id:'07',
-        title:'商旅目的地'
       },
       Davos: {
         id:'08',
@@ -633,53 +627,9 @@ var adChannelsMobile = {
         id:'09',
         title:'图辑'
       },
-      AutoShow: {
-        id:'10',
-        title:'车展'
-      },
-      WATT: {
-        id:'11',
-        title:'巅峰女性'
-      },
-      CityInFutrue: {
-        id:'12',
-        title:'城市未来'
-      },
       LaunchWithFT: {
         id:'13',
         title:'与FT共进午餐'
-      },
-      FutureEnergy: {
-        id:'14',
-        title:'能源未来'
-      },
-      BusinessSport: {
-        id:'15',
-        title:'商务体育'
-      },//17/18是首页测试_北京、内页测试——北京
-      WomenintheNews: {
-        id:'16',
-        title:'焦点女性'
-      },
-      Market: {
-        id:'19',
-        title:'市场'
-      },
-      Conference: {
-        id:'20',
-        title:'会议'
-      },//21(iPad),22(iPhone),23(Android),24(其他手机)
-      TodayFocus: {
-        id:'25',
-        title:'今日焦点'
-      },
-      UpdateAfternoon: {
-        id:'26',
-        title:'午后更新'
-      },
-      WeeklySelection:{
-        id:'27',
-        title:'一周精选'
       },
       TwoSessions: {
         id:'28',
@@ -689,50 +639,9 @@ var adChannelsMobile = {
         id:'29',
         title:'腕表与珠宝'
       },
-      G7: {
-        id:'30',
-        title:'G7峰会'
-      },
       NewBackbone: {
         id:'31',
         title:'新中坚力量'
-      },
-      WorldIWalked: {
-        id:'32',
-        title:'我走过的世界'
-      },
-      ViewFromTheTop: {
-        id:'33',
-        title:'View From The Top'
-      },
-      LuxurySpending: {
-        id:'34',
-        title:'Luxury Spending'
-      },//35(首页测试_上海)、36（内页测试_上海）、37（首页测试_海外）、38（内页测试_海外）
-      JaneChateau: {
-        id:'39',
-        title:'简氏酒庄'
-      },//40(View From The Top_iPad)/41(Android App)/(Android APP测试)
-      
-      Lifestyle_Art: {
-        id:'43',
-        title:'生活时尚_艺术与娱乐'
-      },
-      Lifestyle_Taste: {
-        id:'44',
-        title:'生活时尚_品味'
-      },
-      Lifestyle_Life: {
-        id:'45',
-        title:'生活时尚_生活话题'
-      },
-      Lifestyle_Spend: {
-        id:'46',
-        title:'生活时尚_消费经'
-      },
-      Lifestyle_Money: {
-        id:'47',
-        title:'生活时尚_理财'
       },
       LuxuryAquatics: {
         id:'48',
@@ -753,10 +662,6 @@ var adChannelsMobile = {
       PerfectLife: {
         id:'52',
         title:'极致人生'
-      },//53:移动端测试
-      MemberInfo: {
-        id:'54',
-        title:'会员信息中心'
       },
       InvestUA: {
         id:'55',
@@ -770,30 +675,18 @@ var adChannelsMobile = {
         id:'57',
         title:'存储世界'
       },
-      Survey: {
-        id:'58',
-        title:'调研页频道'
-      },//59(iPhone测试页)、60（Android测试页）
       TencentWe: {
         id:'61',
         title:'Tencent-we'
       },
-      OutLook:{
-        id:'62',
-        title:'展望'
-      },
       AfternoonTeaWithFT: {
         id:'63',
         title:'与FT共进下午茶'
-      },//59(iPhone测试页)、60（Android测试页）
+      },
       Brics2017: {
         id:'64',
         title:'金砖五国峰会'
-      },
-      BadNews: {
-        id:'65',
-        title:'Bad News'
       }
     }
-  },
+  }
 };

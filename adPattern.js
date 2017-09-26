@@ -25,21 +25,21 @@ var adPatternPC = {
     position:{
       Top1:{
         id:'01',
-        describe:'页面从上至下第一个Banner位。'
+        describe:'页面从上至下第1个Banner位。'
       },
       Top2:{
         id:'02',
-        describe:'页面从上至下第二个Banner位。'
+        describe:'页面从上至下第2个Banner位。'
       },
       Top3:{
         id:'03',
-        describe:'页面从上至下第三个Banner位。'
+        describe:'页面从上至下第3个Banner位。'
       }
     } 
   },
   MPU: {
     id:'04',
-    describe:'页面中的块状广告。此处的页面包含首页、频道页、文章页。出现顺序为：右侧侧边栏从上至下排列，然后页面正文由上至下穿插',
+    describe:'页面中的块状广告。此处的页面包含首页、频道页、文章页。可能出现的位置包括两种：右侧侧边栏从上至下排列；页面正文由上至下穿插',
     position:{
       Right1: {
         id:'11',
@@ -51,21 +51,21 @@ var adPatternPC = {
       },
       HalfPage1: {
         id:'21',
-        describe:'页面中间穿插的第1个MPU位。'
+        describe:'页面正文中间穿插的第1个MPU位。'
       },
       HalfPage2: {
         id:'22',
-        describe:'页面中间穿插的第2个MPU位。'
+        describe:'页面正文中间穿插的第2个MPU位。'
       }
     }  
   },
   Ribbon: {
-    id:'03',
+    id:'05',
     describe:'首页右侧栏顶部的端带状广告。',
     position:{
       Top1: {
         id:'01',
-        describe:'首页右侧栏顶部Ribbon位'
+        describe:'首页右侧栏顶部Ribbon位.'
       }
     }
   },
@@ -89,7 +89,7 @@ var adPatternPC = {
   },
   Event: {
     id:'07',
-    describe:'首页“会员活动”部分的会员活动广告。出现顺序为：根据网页大小响应式从左至右从上至下排列。',
+    describe:'首页“会员活动”部分的会员活动广告。出现顺序为：根据网页大小响应式从左至右、从上至下排列。',
     position:{
       Num1:{
         id:'01',
@@ -125,7 +125,7 @@ var adPatternPC = {
   }
 }
 
-var adPatternPhone = {//QUEST这个Pattern也应该指的是App吧？因为Phone打开App和网页广告位是不一样的，还是说应该统一起来？
+var adPatternPhone = {
   FullScreen: {
     id:'01',
     describe:'进入手机App时看到的全屏广告。',
@@ -174,11 +174,11 @@ var adPatternPhone = {//QUEST这个Pattern也应该指的是App吧？因为Phone
     position: {
       Num1: {
         id:'01',
-        describe:'从上至下第1个信息流广告位'
+        describe:'从上至下第1个Information位'
       },
       Num2: {
         id:'02',
-        describe:'从上至下第2个信息流广告位'
+        describe:'从上至下第2个Information位'
       }
     }
   }
